@@ -6,6 +6,7 @@ body{
 }
 p{
     padding: 10px;
+    line-height: 30px;
 }
 h5{
     font-family: 'Bebas Neue', sans-serif;
@@ -31,6 +32,10 @@ h4{
     display: flex;
     justify-content: flex-end;
 }
+.row-left{
+    display: flex;
+    justify-content: flex-start;
+}
 .row-around{
     display: flex;
     justify-content: space-around;
@@ -41,14 +46,23 @@ h4{
 }
 .col-6{
     width: 50%;
+    position: relative;
 }
 .logo{
     margin-top: 20px;
 }
 .col-6 input{
-    width: 90%;
+    width: 100%;
     padding: 7px;
     margin: 20px 0;
+    border: 1px solid rgb(161,161,161);
+    outline: none;
+}
+.col-6 img{
+    position: absolute;
+    top: 25px;
+    left:480px;
+    cursor: pointer;
 }
 .cart{
     width: 60px;
@@ -60,7 +74,7 @@ h4{
 }
 nav{
     background-color: rgb(76,207,193);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.274);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.774);
 }
 .main-menu{
     display: flex;
@@ -70,7 +84,7 @@ nav{
     margin: 10px auto;  
     text-align: center;
     border-right: 2px solid white; 
-    padding: 0 1.7vmax;
+    padding: 0 1.6vmax;
 }
 .main-menu li:last-child{ 
     border:none;
@@ -80,6 +94,7 @@ nav{
     font-family: 'Bebas Neue', sans-serif;
     color: white;
     text-align: center;
+    font-size: 14pt;
 }
 .turquoise{
     background-color: rgb(65,200,179);
@@ -91,8 +106,45 @@ nav{
     font-size: 24pt;
     color: rgb(161,161,161);
 }
+.col-60{
+    width: 45%;
+    padding: 70px 10px;
+    font-size: 14pt;
+}
+.col-40{
+    width: 40%;
+    padding: 70px;
+}
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 46pt;
+}
+.slider-btn{
+    padding: 7px 25px;
+    color: white;
+    border: 4px white solid;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 21pt;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.categories{
+    display: flex;
+    position: relative;
+}
+.arr-left{
+    position: absolute;
+    top:22%;
+    left:10%;
+}
+.arr-right{
+    position: absolute;
+    top:22%;
+    left:87%;
+}
 .col-33{
-    width: 33%;
+    width: 33.3%;
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 20pt;
@@ -100,6 +152,7 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.384);
 }
 .descr{
     width: 35%;
@@ -131,8 +184,11 @@ button{
     border: 1px solid rgb(60,195,149);
     border-radius: 5px;
     margin-left: 10px;
+    cursor: pointer;
 }
-
+button:focus{
+    outline: none;
+}
 .bottom .col-3{
     padding: 20px 40px;
 }
